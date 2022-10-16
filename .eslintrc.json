@@ -23,6 +23,9 @@
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
+    "func-names": "off",
+    "no-underscore-dangle": "off",
+    "camelcase": "off",
     "max-len": [
       "error",
       {
