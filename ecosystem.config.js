@@ -4,7 +4,7 @@
 module.exports = {
   apps: [
     {
-      name: "sosmed-api",
+      name: "limelight-api",
       script: "./server.ts",
     },
   ],
