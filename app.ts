@@ -1,17 +1,17 @@
 /// <reference types="./express-env" />
 
-import dotenv from "dotenv";
-import express from "express";
-import type { Request, Response } from "express";
-import http from "http";
+import apicache from "apicache";
 import bodyParser from "body-parser";
 import cors from "cors";
+import dotenv from "dotenv";
+import type { Request, Response } from "express";
+import express from "express";
 import helmet from "helmet";
+import http from "http";
 import morgan from "morgan";
-import apicache from "apicache";
-import ApiRouter from "./routes";
-import { ResponseMiddleware } from "./middlewares";
-import { connectMongoDB, connectRedisDB, redisClient } from "./lib";
+import { connectMongoDB, connectRedisDB, redisClient } from "./src/lib";
+import { ResponseMiddleware } from "./src/middlewares";
+import ApiRouter from "./src/routes";
 
 dotenv.config({
   path: `${process.cwd()}/${process.env.NODE_ENV === "development" ? ".env.development" : ".env.production"}`,
