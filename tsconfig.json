@@ -100,6 +100,6 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
-  "include": ["app.ts", "start.ts", "express-env.d.ts", "**/*.ts"],
+  "include": ["**/*.ts"],
   "exclude": ["build", "node_modules"]
 }
