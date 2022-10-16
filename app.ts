@@ -13,9 +13,7 @@ import { connectMongoDB, connectRedisDB, redisClient } from "./src/lib";
 import { ResponseMiddleware } from "./src/middlewares";
 import ApiRouter from "./src/routes";
 
-dotenv.config({
-  path: `${process.cwd()}/${process.env.NODE_ENV === "development" ? ".env.development" : ".env.production"}`,
-});
+dotenv.config();
 
 const app = express();
 const server = http.createServer(app);
